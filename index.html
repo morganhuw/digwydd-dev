@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digwydd Dev</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to external CSS file -->
+    <!-- IMPORTANT: You need to create a file named 'style.css' in the same directory as this HTML file -->
+    <!-- and paste the CSS provided in the response into that 'style.css' file. -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-10 lg:px-16 flex justify-between items-center rounded-b-lg">
+        <div class="text-2xl font-bold text-blue-700">Digwydd Dev</div>
+        <nav class="hidden md:flex space-x-6">
+            <a href="#home" class="text-gray-700 hover:text-blue-700 font-medium transition-colors duration-300">Home</a>
+            <a href="#services" class="text-gray-700 hover:text-blue-700 font-medium transition-colors duration-300">Services</a>
+            <a href="#about" class="text-gray-700 hover:text-blue-700 font-medium transition-colors duration-300">About Us</a>
+            <a href="#contact" class="text-gray-700 hover:text-blue-700 font-medium transition-colors duration-300">Contact</a>
+        </nav>
+        <!-- Mobile Menu Button (Hamburger) -->
+        <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-blue-700 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </header>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-4 px-6 rounded-b-lg">
+        <nav class="flex flex-col space-y-3">
+            <a href="#home" class="text-gray-700 hover:text-blue-700 font-medium transition-colors duration-300 py-2">Home</a>
+            <a href="#services" class="text-gray-700 hover:text-blue-700 font-medium transition-colors duration-300 py-2">Services</a>
+            <a href="#about" class="text-gray-700 hover:text-blue-700 font-medium transition-colors duration-300 py-2">About Us</a>
+            <a href="#contact" class="text-gray-700 hover:text-blue-700 font-medium transition-colors duration-300 py-2">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-r from-blue-600 to-purple-700 text-white py-20 md:py-32 flex items-center justify-center min-h-[500px] rounded-b-xl shadow-lg mx-4 md:mx-8 lg:mx-16 mt-6">
+        <div class="container mx-auto text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-down">
+                Innovate. Develop. Succeed.
+            </h1>
+            <p class="text-lg md:text-xl mb-8 opacity-90 animate-fade-in-up">
+                Your trusted partner for cutting-edge programming and diverse development solutions.
+            </p>
+            <a href="#contact" class="bg-white text-blue-700 hover:bg-gray-100 font-semibold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 inline-block">
+                Contact us today to find out how we can help
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-white mx-4 md:mx-8 lg:mx-16 mt-8 rounded-xl shadow-lg">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1: Code Reviewing & Debugging -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-600 mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Code Reviewing & Debugging</h3>
+                    <p class="text-gray-600">Ensuring your code is clean, efficient, and bug-free with expert review and debugging services.</p>
+                </div>
+
+                <!-- Service Card 2: Custom Software Development -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-600 mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-1.25-3M15 10V5a3 3 0 00-3-3H9a3 3 0 00-3 3v5m6 4h.01M12 16h.01"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Custom Software Development</h3>
+                    <p class="text-gray-600">Developing bespoke software solutions tailored to your unique business challenges and requirements.</p>
+                </div>
+
+                <!-- Service Card 3: Visitor Management Systems for Schools -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-600 mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h-5v-2a3 3 0 013-3h2a3 3 0 013 3v2h-5zm-3-3H8m4 0h.01M12 11a4 4 0 110-8 4 4 0 010 8z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Visitor Management Systems for Schools</h3>
+                    <p class="text-gray-600">Secure and intuitive systems to streamline visitor check-ins and enhance school safety.</p>
+                </div>
+
+                <!-- Service Card 4: Booking Systems for Small Businesses -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-600 mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Booking Systems for Small Businesses</h3>
+                    <p class="text-gray-600">Efficient and user-friendly booking solutions to manage appointments and reservations with ease.</p>
+                </div>
+
+                <!-- Service Card 5: Prototype & MVP Builds -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-600 mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H3a1 1 0 01-1-1v-3a1 1 0 011-1h1a2 2 0 100-4H3a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 011-1v-1z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Prototype & MVP Builds</h3>
+                    <p class="text-600">Rapid development of prototypes and Minimum Viable Products to test and validate your ideas.</p>
+                </div>
+
+                <!-- Service Card 6: Technical Support & Collaboration -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-600 mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 0A9.953 9.953 0 0112 12c-.534 0-1.05-.054-1.556-.157m-3.536 3.536l-3.536 3.536m0 0A9.953 9.953 0 0112 12c.534 0 1.05.054 1.556.157m-3.536-3.536L5.636 18.364m0 0A9.953 9.953 0 0112 12c.534 0 1.05.054 1.556.157m3.536-3.536l3.536-3.536m0 0A9.953 9.953 0 0112 12c-.534 0-1.05-.054-1.556-.157"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Technical Support & Collaboration</h3>
+                    <p class="text-gray-600">Providing ongoing technical support and fostering collaborative environments for successful project delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-gray-100 mx-4 md:mx-8 lg:mx-16 mt-8 rounded-xl shadow-lg">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">About Digwydd Dev</h2>
+            <div class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed">
+                <p class="mb-6">
+                    Hello! I'm Morgan Huw, an independent developer based in the beautiful country of Wales. At Digwydd Dev, my focus is on crafting practical, reliable software solutions that truly make a difference for your business.
+                </p>
+                <p class="mb-6">
+                    With a solid background in IT support and extensive hands-on development experience, I understand the importance of robust and user-friendly systems. A core service I offer is code reviewing and debugging, ensuring your existing projects are optimized and free of issues.
+                </p>
+                <p class="mb-6">
+                    I've had the privilege of building impactful solutions, including a custom booking system that transformed operations for a travel agency and a comprehensive visitor management system for schools, enhancing both efficiency and security.
+                </p>
+                <p class="mb-8">
+                    The name "Digwydd" means "to happen" in Welsh. It perfectly encapsulates my mission: to help your ideas happen, turning concepts into tangible, high-performing digital realities.
+                </p>
+
+                <!-- Client Testimonials -->
+                <div class="mt-12 text-left">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center">What Clients Say</h3>
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-6 border-l-4 border-blue-500">
+                        <p class="italic text-gray-700 mb-3">“Morgan built us a custom booking system that transformed how we manage our travel agency. It’s simple, reliable, and exactly what we needed.”</p>
+                        <p class="font-semibold text-gray-800 text-right">– Travel Agency</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-purple-500">
+                        <p class="italic text-gray-700 mb-3">“The visitor management system Morgan developed for our school has made a huge difference. It’s secure, easy to use, and staff love it.”</p>
+                        <p class="font-semibold text-gray-800 text-right">– School Administrator, North Wales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white mx-4 md:mx-8 lg:mx-16 mt-8 rounded-xl shadow-lg mb-8">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Get in Touch</h2>
+            <div class="max-w-xl mx-auto">
+                <p class="text-lg text-gray-700 mb-8">
+                    Ready to start your next project or have a question? We'd love to hear from you!
+                </p>
+            
+                <div class="mt-12 text-lg text-gray-700">
+                    <p class="mb-2"><strong>Email:</strong> <a href="mailto:cyswllt@digwydd.com" class="text-blue-600 hover:underline">cyswllt@digwydd.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8 px-4 md:px-8 lg:px-16 text-center rounded-t-lg">
+        <p>&copy; 2025 Digwydd Dev. All rights reserved.</p>
+        <div class="flex justify-center space-x-6 mt-4">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu after clicking a link
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Toggle mobile menu visibility
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+    </script>
+</body>
+</html>
